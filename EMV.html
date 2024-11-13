@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Vestuário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+
+            <!-- Logo para desktop -->
+            <div class="logo logo-desktop">
+                <img src="images/logo-removebg-preview.png" alt="Logo da Loja">
+            </div>
+
+            <!-- Logo para mobile -->
+            <div class="logo logo-mobile">
+                <img src="images/logo-pequeno-removebg-preview.png" alt="Logo Alternativa">
+            </div>
+
+                <!-- Navbar para desktop -->
+                <nav class="navbar desktop-navbar">
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Ícone do menu mobile -->
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+        </div>
+        
+        <!-- Navbar para mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner principal com Slider -->
+    <section class="main-banner">
+        <div class="banner-slide">
+            <img class="banner-image" src="banner1.jpg" alt="Promoção de Vestuário">
+            <div class="banner-text">
+                <h1>Nossa Coleção Exclusiva</h1>
+                <p>Explore as últimas tendências</p>
+                <a href="#produtos" class="button">Ver Coleção</a>
+            </div>
+        </div>
+        <div class="banner-slide">
+            <img class="banner-image" src="banner2.jpg" alt="Novidades da Temporada">
+            <div class="banner-text">
+                <h1>Novidades da Temporada</h1>
+                <p>Encontre o estilo perfeito para você</p>
+                <a href="#produtos" class="button">Compre Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section id="produtos" class="featured-products">
+        <h2>Produtos em Destaque</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3>Camiseta Esportiva</h3>
+                <p>R$ 99,90</p>
+                <a href="#comprar" class="button">Comprar</a>
+            </div>
+            <!-- Repetir cards de produto -->
+        </div>
+    </section>
+
+    <!-- Promoções -->
+    <section id="promocoes" class="promotions">
+        <h2>Promoções</h2>
+        <div class="promotions-grid">
+            <div class="promotion-card">
+                <img src="promo1.jpg" alt="Promoção 1">
+                <div class="promo-text">
+                    <h3>50% OFF</h3>
+                    <p>Na coleção de inverno</p>
+                </div>
+            </div>
+            <!-- Repetir cards de promoção -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Suporte</h3>
+                <ul>
+                    <a href="#ajuda">Ajuda</a>
+                    <br>
+                    <a href="#envio">Envio & Entrega</a>
+                </ul>
+            </div>
+            <div class="footer-section-social-media">
+                <h4>Siga-nos</h4>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/Instagram_icon.png.webp" alt="Instagram"></a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2024 Loja de Vestuário - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript do Slider -->
+    <script src="script.js"></script>
+</body>
+</html>
