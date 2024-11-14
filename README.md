@@ -2,6 +2,8 @@
 
 Este é o repositório do site para a **Loja de Vestuário - Estilo Modas e Variedades (EMV)**. O site foi desenvolvido para oferecer uma experiência de compra online, apresentando produtos em destaque, promoções e informações de contato.
 
+🔗 **Acesse o site:** [Estilo Modas e Variedades (EMV)](https://hallanchristian.github.io/Estilo-Modas-e-Variedades/index.html)
+
 ## 📸 Visão Geral do Site
 
 O site é composto por:
@@ -45,12 +47,12 @@ Para visualizar o projeto localmente, siga estes passos:
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/SeuUsuario/EMV.git
+   git clone https://github.com/HallanChristian/Estilo-Modas-e-Variedades.git
    ```
 
 2. Navegue até a pasta do projeto:
    ```bash
-   cd EMV
+   cd Estilo-Modas-e-Variedades
    ```
    
 3. Abra o arquivo `index.html` no navegador ou use uma extensão como **Live Server** no VS Code.
