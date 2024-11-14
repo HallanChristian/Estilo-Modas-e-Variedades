@@ -2,7 +2,7 @@
 
 Este é o repositório do site para a **Loja de Vestuário - Estilo Modas e Variedades (EMV)**. O site foi desenvolvido para oferecer uma experiência de compra online, apresentando produtos em destaque, promoções e informações de contato.
 
-🔗 **Acesse o site:** (https://hallanchristian.github.io/Estilo-Modas-e-Variedades/index.html)
+🔗 **Acesse o site:** https://hallanchristian.github.io/Estilo-Modas-e-Variedades/index.html
 
 ## 📸 Visão Geral do Site
 
