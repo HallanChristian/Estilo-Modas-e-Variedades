@@ -41,20 +41,4 @@ O site possui as seguintes seções:
 - `script.js`: JavaScript para funcionalidade de menu mobile.
 - `images/`: Contém logos, banners e imagens de produtos.
 
-## ⚙️ Como Executar o Projeto
-
-Para visualizar o projeto localmente, siga estes passos:
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/HallanChristian/Estilo-Modas-e-Variedades.git
-   ```
-
-2. Navegue até a pasta do projeto:
-   ```bash
-   cd Estilo-Modas-e-Variedades
-   ```
-   
-3. Abra o arquivo `index.html` no navegador ou use uma extensão como **Live Server** no VS Code.
-
 © 2024 Loja de Vestuário EMV - Todos os direitos reservados.
