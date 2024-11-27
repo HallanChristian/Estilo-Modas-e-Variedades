@@ -12,11 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* a:focus, button:focus, input:focus {
-    outline: 3px solid #FFD700;
-    outline-offset: 2px;
-} */
-
 /* Cabeçalho */
 header {
     background-color: white;
@@ -58,6 +53,52 @@ header {
     font-size: 16px;
 }
 
+
+/* Estilo do Dropdown */
+.navbar li {
+    position: relative; 
+}
+
+.dropdown {
+    opacity: 0; /* Inicialmente escondido */
+    display: none;
+    position: absolute;
+    top: 100%; /* Coloca o dropdown abaixo do item de menu */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Garante que o dropdown fique acima de outros elementos */
+    width: auto; /* Permite que o dropdown se ajuste ao conteúdo */
+    flex-direction: column; /* Exibe itens na vertical por padrão */
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 10px;
+}
+
+.dropdown li {
+    list-style: none;
+    padding: 8px 15px; /* Ajuste de espaçamento interno */
+    text-align: center;
+}
+
+.dropdown li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap; /* Evita quebra de linha nos textos */
+}
+
+.dropdown li a:hover {
+    color: red;
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+/* Exibir o dropdown ao passar o mouse sobre "Produtos" */
+.navbar li:hover .dropdown {
+    opacity: 1;
+    display: inline; /* Exibe o dropdown */
+}
+
 .navbar a:hover {
     color: red;
 }
@@ -83,9 +124,9 @@ header {
 }
 
 .hamburger-menu.open .bar:nth-child(1) {
-    transform: rotate(45deg);
+    transform: rotate(42deg);
     position: relative;
-    top: 6px;
+    top: 8.5px;
 }
 
 .hamburger-menu.open .bar:nth-child(2) {
@@ -93,9 +134,9 @@ header {
 }
 
 .hamburger-menu.open .bar:nth-child(3) {
-    transform: rotate(-45deg);
+    transform: rotate(-42deg);
     position: relative;
-    top: -6px;
+    top: -6.9px;
 }
 
 .mobile-menu {
@@ -120,6 +161,26 @@ header {
     .header-container .desktop-navbar {
         display: none; 
     }
+
+    .mobile-menu .navbar .dropdown {
+        position: static; /* Remove a posição absoluta */
+        width: 100%; /* Faz com que o dropdown ocupe toda a largura */
+        box-shadow: none;
+    }
+
+    .navbar .dropdown {
+        display: none; /* Inicialmente escondido */
+    }
+    
+    /* Mostrar o dropdown apenas quando o item estiver ativo */
+    .navbar li.active .dropdown {
+        display: block; /* Exibe o dropdown */
+    }
+
+    .mobile-menu .navbar li:hover .dropdown {
+        display: block;
+    }
+
     .hamburger-menu {
         display: flex; 
     }
@@ -132,7 +193,7 @@ header {
         align-items: center;
         list-style: none;
         gap: 20px;
-        padding: 20px 0;
+        padding: 20px;
     }
     .mobile-menu nav ul li a {
         color: black;
@@ -223,6 +284,9 @@ header {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    max-height: 500px; 
+    overflow-y: auto;  
+    padding-right: 20px;
 }
 
 .product-item, .promotion-item {

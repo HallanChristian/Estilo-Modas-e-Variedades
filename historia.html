@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
@@ -9,8 +9,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilo Modas e Variedades</title>
-    <meta name="description" content="Loja de vestuário e moda com produtos variados e promoções imperdíveis. Explore as tendências e encontre seu estilo perfeito.">
+    <meta name="description" content="História da nossa empresa">
+    <title>História da Empresa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
             <!-- Navbar para desktop -->
             <nav class="navbar desktop-navbar">
                 <ul>
-                    <li><a href="#home">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li>
                         <a>Produtos</a>
                         <!-- Dropdown para Produtos -->
@@ -59,7 +59,7 @@
         <div class="mobile-menu" id="mobileMenu">
             <nav class="navbar">
                 <ul>
-                    <li><a href="#home">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li>
                         <a>Produtos</a>
                         <!-- Dropdown para Produtos -->
@@ -78,72 +78,43 @@
         </div>
     </header>
 
-    <!-- Banner principal com Slider -->
-    <section class="main-banner" aria-label="Banner principal">
-        <div class="banner-slide">
-            <img class="banner-image" src="images/banner1.jpg" alt="Promoção de Vestuário">
-            <div class="banner-text">
-                <h1>Nossa Coleção Exclusiva</h1>
-                <p>Explore as últimas tendências</p>
-                <a href="#produtos" class="button">Ver Coleção</a>
-            </div>
-        </div>
-        <div class="banner-slide">
-            <img class="banner-image" src="images/banner2.jpg" alt="Novidades da Temporada">
-            <div class="banner-text">
-                <h1>Novidades da Temporada</h1>
-                <p>Encontre o estilo perfeito para você</p>
-                <a href="#produtos" class="button">Compre Agora</a>
-            </div>
-        </div>
-    </section>
+    <!-- Conteúdo da História da Empresa -->
+    <main>
+        <section id="inicio">
+            <h2>Início</h2>
+            <p>Em 2000, a empresa XYZ foi fundada com a missão de oferecer soluções inovadoras no mercado de tecnologia. Desde o início, nos comprometemos a entregar qualidade e excelência a nossos clientes.</p>
+        </section>
 
-    <!-- Produtos em Destaque -->
-    <section id="produtos" class="featured-products" aria-labelledby="produtos-titulo">
-        <h2 id="produtos-titulo">Produtos em Destaque</h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <img src="images/produto1.jpg" alt="Camiseta Esportiva">
-                <h3>Camiseta Esportiva</h3>
-                <p>R$ 99,90</p>
-                <a href="#comprar" class="button">Comprar</a>
-            </div>
-            <!-- Repetir cards de produto -->
-        </div>
-    </section>
+        <section id="fundacao">
+            <h2>A Fundação</h2>
+            <p>Fundada por João da Silva, um visionário apaixonado por inovação tecnológica, a empresa começou como uma pequena startup em um espaço modesto. O primeiro grande desafio foi...</p>
+        </section>
+        
+        <section id="marcos">
+            <h2>Marcos Importantes</h2>
+            <ul>
+                <li><strong>2005:</strong> Lançamento do primeiro produto inovador.</li>
+                <li><strong>2010:</strong> Expansão para o mercado europeu.</li>
+                <li><strong>2015:</strong> Reconhecimento como líder do setor em inovação.</li>
+                <li><strong>2020:</strong> Abertura do escritório na Ásia.</li>
+            </ul>
+        </section>
 
-    <!-- Promoções -->
-    <section id="promocoes" class="promotions" aria-labelledby="promocoes-titulo">
-        <h2 id="promocoes-titulo">Promoções</h2>
-        <div class="promotions-grid">
-            <div class="promotion-card">
-                <img src="images/promo1.jpg" alt="50% OFF na coleção de inverno">
-                <div class="promo-text">
-                    <h3>50% OFF</h3>
-                    <p>Na coleção de inverno</p>
-                </div>
-            </div>
-            <!-- Repetir cards de promoção -->
-        </div>
-    </section>
+        <section id="missao">
+            <h2>Missão e Visão</h2>
+            <p><strong>Missão:</strong> Oferecer soluções tecnológicas que transformem a forma como as empresas operam, sempre com foco na qualidade e no serviço ao cliente.</p>
+            <p><strong>Visão:</strong> Ser reconhecida mundialmente como a principal fornecedora de soluções inovadoras e sustentáveis, contribuindo para um futuro mais conectado e eficiente.</p>
+        </section>
+    </main>
 
     <!-- Rodapé -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Suporte</h3>
-                <ul>
-                    <li><a href="#ajuda">Ajuda</a></li>
-                    <li><a href="#envio">Envio & Entrega</a></li>
-                </ul>
-            </div>
-            <div class="footer-section-social-media">
-                <h4>Siga-nos</h4>
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="images/Instagram_icon.png.webp" alt="Instagram"></a>
-            </div>
-        </div>
-        <p class="footer-copy">© 2024 Loja de Vestuário - Todos os direitos reservados.</p>
+    <footer id="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações sobre nossa empresa, entre em contato conosco através do e-mail <a href="mailto:contato@empresa.com">contato@empresa.com</a>.</p>
+        <address>
+            <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+            <p>Telefone: (11) 1234-5678</p>
+        </address>
     </footer>
 
     <!-- JavaScript do Slider e Menu Mobile -->
