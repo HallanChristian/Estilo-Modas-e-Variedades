@@ -30,6 +30,7 @@ header {
 .logo img {
     height: 50px;
     width: auto;
+    margin-left: 10px;
 }
 
 .logo-desktop {
@@ -115,6 +116,7 @@ header {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    margin-right: 10px;
 }
 
 .hamburger-menu .bar {
@@ -161,6 +163,7 @@ header {
 @media (max-width: 768px) {
     .header-container .desktop-navbar {
         display: none; 
+        padding: 0 20px;
     }
 
     .mobile-menu .navbar .dropdown {
