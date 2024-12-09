@@ -323,31 +323,71 @@ header {
 
 /* Produtos e Promoções */
 .featured-products, .promotions {
-    padding: 40px 5%;
-    text-align: center;
+    padding: 40px 5%; /* Espaçamento ao redor da seção */
+    text-align: center; /* Centraliza o título horizontalmente */
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção na página */
 }
 
+.featured-products h2, .promotions h2 {
+    margin-bottom: 20px; /* Espaçamento entre o título e os produtos */
+    font-size: 24px; /* Tamanho do título */
+    font-weight: bold; /* Destaque no título */
+    color: #333; /* Cor do texto */
+}
+
+/* Grid de Produtos */
 .products-grid, .promotions-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-height: 500px; 
-    overflow-y: auto;  
-    padding-right: 20px;
+    display: grid; /* Usa grid layout para organizar os produtos */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cria colunas flexíveis */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center; /* Alinha os itens ao centro */
+    max-width: 100%; /* Garante que o grid não ultrapasse os limites */
 }
 
+/* Estilo dos Cards */
 .product-item, .promotion-item {
-    border: 1px solid #ccc;
-    padding: 20px;
-    max-width: 200px;
-    text-align: center;
+    border: 1px solid #ccc; /* Bordas leves para os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    width: 200px; /* Largura fixa dos itens para evitar desalinhamento */
+    text-align: center; /* Centraliza o conteúdo do card */
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-item img, .promotion-item img {
-    width: 100%;
-    height: auto;
+.product-item:hover, .promotion-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa no hover */
 }
+
+/* Imagem do Produto */
+.product-item img, .promotion-item img {
+    width: 100%; /* Largura total do card */
+    height: auto; /* Proporções automáticas */
+    border-radius: 4px; /* Arredonda levemente as bordas da imagem */
+    margin-bottom: 10px; /* Espaçamento entre imagem e texto */
+}
+
+/* Botão de Comprar */
+.product-item .button, .promotion-item .button {
+    display: inline-block; /* Botão em bloco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    margin-top: 10px; /* Espaçamento acima do botão */
+    background-color: #007bff; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    border-radius: 4px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px; /* Tamanho do texto */
+    font-weight: bold; /* Destaque no texto */
+    transition: background-color 0.3s ease;
+}
+
+.product-item .button:hover, .promotion-item .button:hover {
+    background-color: #0056b3; /* Fundo azul escuro no hover */
+}
+
 /* Envio */
 .banner-envio{
     display: block;
