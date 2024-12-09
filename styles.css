@@ -11,14 +11,15 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
-
-/* Cabeçalho */
 header {
-    background-color: white;
-    border-bottom: solid;
-    padding: 10px 20px;
+    background-color: #A9a9a9; /* Cinza claro */
+    color: #333; /* Cor do texto */
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc; /* Linha divisória opcional */
 }
-
 .header-container {
     display: flex;
     align-items: center;
@@ -300,6 +301,31 @@ header {
     width: 100%;
     height: auto;
 }
+/* Envio */
+.banner-envio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20px;
+}
+.banner-envio2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.banner-faq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Rodapé */
 footer {
@@ -339,4 +365,156 @@ footer .social-icons {
 
 .footer-section ul {
     list-style-type: none;
+}
+/*Design da Pág Historia/*
+
+/* Estilo Geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.missao-visao {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.missao-visao img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+footer {
+    display: flex;
+    flex-direction: column; /* Posiciona os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    background-color: #333; /* Fundo escuro */
+    color: white;
+    padding: 1rem;
+}
+
+.social-media {
+    display: flex; /* Organiza as redes sociais em linha */
+    gap: 1rem; /* Espaço entre os ícones */
+    margin-bottom: 1rem; /* Espaço entre redes e o texto */
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Efeito ao passar o mouse */
+}
+
+.footer-text {
+    text-align: center; /* Centraliza o texto */
+    font-size: 0.9rem;
 }
