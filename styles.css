@@ -211,6 +211,53 @@ header {
     .logo-mobile {
         display: block; 
     }
+    .sub-navbar {
+        flex-wrap: wrap; /* Permite quebra de linha */
+        justify-content: space-around; /* Distribui itens uniformemente */
+        padding: 10px;
+    }
+
+    .sub-navbar ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sub-navbar li {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+}
+
+.sub-navbar {
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-navbar ul li {
+    display: inline;
+}
+
+.sub-navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.sub-navbar ul li a:hover {
+    color: #007BFF;
 }
 
 /* Banner Principal */
