@@ -262,21 +262,6 @@ header {
     color: #007BFF;
 }
 
-/* Garantir que as imagens do carrossel tenham o mesmo tamanho */
-.carousel-inner .item img {
-    width: 100%; 
-    height: auto; 
-    max-height: 400px; 
-    object-fit: cover; 
-}
-
-/* Definir o tamanho do container do carrossel */
-.carousel {
-    max-width: 100%; 
-    overflow: hidden; 
-    margin: 0px auto; 
-}
-
 .button {
     display: inline-block;
     padding: 10px 20px;
