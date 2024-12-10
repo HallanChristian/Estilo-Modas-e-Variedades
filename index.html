@@ -39,8 +39,7 @@
                         <a>Produtos</a>
                         <!-- Dropdown para Produtos -->
                         <ul class="dropdown">
-                            <li><a href="lancamentos.html">Lançamentos</a></li>
-                            <li><a href="promocoes.html">Promoções</a></li>
+                            <li><a href="acessorios.html">Lançamentos</a></li>
                             <li><a href="masculino.html">Masculino</a></li>
                             <li><a href="feminino.html">Feminino</a></li>
                             <li><a href="infantil.html">Infantil</a></li>
@@ -68,8 +67,7 @@
                         <a>Produtos</a>
                         <!-- Dropdown para Produtos -->
                         <ul class="dropdown">
-                            <li><a href="lancamentos.html">Lançamentos</a></li>
-                            <li><a href="promocoes.html">Promoções</a></li>
+                            <li><a href="acessorios.html">Acessórios</a></li>
                             <li><a href="masculino.html">Masculino</a></li>
                             <li><a href="feminino.html">Feminino</a></li>
                             <li><a href="infantil.html">Infantil</a></li>
@@ -82,32 +80,21 @@
         </div>
     </header>
 
-    <!-- Banner principal com Slider -->
-    <section class="main-banner" aria-label="Banner principal">
-        <div class="banner-slide">
-            <img class="banner-image" src="images/banner1.jpg" alt="Promoção de Vestuário">
-            <div class="banner-text">
-                <h1>Nossa Coleção Exclusiva</h1>
-                <p>Explore as últimas tendências</p>
-                <a href="#produtos" class="button">Ver Coleção</a>
-            </div>
-        </div>
-        <div class="banner-slide">
-            <img class="banner-image" src="images/banner2.jpg" alt="Novidades da Temporada">
-            <div class="banner-text">
-                <h1>Novidades da Temporada</h1>
-                <p>Encontre o estilo perfeito para você</p>
-                <a href="#produtos" class="button">Compre Agora</a>
-            </div>
-        </div>
-    </section>
-
+    <!-- Segunda Navbar para Home -->
+    <nav class="sub-navbar">
+        <ul>
+            <li><a href="#destaques">Destaques</a></li>
+            <li><a href="#produtos">Promoções</a></li>
+            <li><a href="#lancamentos">Lançamentos</a></li>
+        </ul>
+    </nav>
+    <br>
     <!-- Produtos em Destaque -->
     <section id="produtos" class="featured-products" aria-labelledby="produtos-titulo">
         <h2 id="produtos-titulo">Produtos em Destaque</h2>
         <div class="products-grid">
             <div class="product-card">
-                <img src="images/produto1.jpg" alt="Camiseta Esportiva">
+                <img src="images/camiseta esportiva feminino.webp" width=auto height="250" alt="Camiseta Esportiva">
                 <h3>Camiseta Esportiva</h3>
                 <p>R$ 99,90</p>
                 <a href="#comprar" class="button">Comprar</a>
@@ -115,13 +102,13 @@
             <!-- Repetir cards de produto -->
         </div>
     </section>
-
+    <br>
     <!-- Promoções -->
     <section id="promocoes" class="promotions" aria-labelledby="promocoes-titulo">
         <h2 id="promocoes-titulo">Promoções</h2>
         <div class="promotions-grid">
             <div class="promotion-card">
-                <img src="images/promo1.jpg" alt="50% OFF na coleção de inverno">
+                <img src="images/camiseta social feminino.webp" width=auto height="250" alt="50% OFF na coleção de inverno">
                 <div class="promo-text">
                     <h3>50% OFF</h3>
                     <p>Na coleção de inverno</p>
@@ -130,7 +117,7 @@
             <!-- Repetir cards de promoção -->
         </div>
     </section>
-
+    <br>
     <!-- Rodapé -->
     <footer>
         <div class="footer-container">
@@ -142,11 +129,14 @@
                 </ul>
             </div>
             <div class="footer-section-social-media">
-                <h4>Siga-nos</h4>
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/estilomodasto/"><img src="images/Instagram_icon.png.webp" alt="Instagram"></a>
+                <h4>Contate-nos</h4>
+                <a href="https://www.instagram.com/estilomodasto/" target="_blank">
+                    <img src="images/Instagram_icon.png.webp" alt="Instagram">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=5563992948952&text&type=phone_number&app_absent=0" target="_blank">
+                    <img src="images/whatsapp.png" alt="WhatsApp">
+                </a>
             </div>
-        </div>
         <p class="footer-copy"> © 2024 Loja de Vestuário - Todos os direitos reservados.</p>
     </footer>
 

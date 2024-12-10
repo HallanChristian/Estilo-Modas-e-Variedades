@@ -45,7 +45,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-
 // Fechar o menu ao clicar fora
 document.addEventListener('click', function(event) {
     const mobileMenu = document.getElementById('mobileMenu');

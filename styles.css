@@ -167,18 +167,17 @@ header {
     }
 
     .mobile-menu .navbar .dropdown {
-        position: static; /* Remove a posição absoluta */
-        width: 100%; /* Faz com que o dropdown ocupe toda a largura */
+        position: static; 
+        width: 100%; 
         box-shadow: none;
     }
 
     .navbar .dropdown {
-        display: none; /* Inicialmente escondido */
+        display: none;
     }
     
-    /* Mostrar o dropdown apenas quando o item estiver ativo */
     .navbar li.active .dropdown {
-        display: block; /* Exibe o dropdown */
+        display: block; 
     }
 
     .mobile-menu .navbar li:hover .dropdown {
@@ -215,19 +214,19 @@ header {
         display: block; 
     }
     .sub-navbar {
-        flex-wrap: wrap; /* Permite quebra de linha */
-        justify-content: space-around; /* Distribui itens uniformemente */
+        flex-wrap: wrap; 
+        justify-content: space-around; 
         padding: 10px;
     }
 
     .sub-navbar ul {
-        flex-direction: column; /* Empilha os itens verticalmente */
+        flex-direction: column; 
         align-items: center;
         gap: 15px;
     }
 
     .sub-navbar li {
-        font-size: 14px; /* Reduz o tamanho da fonte */
+        font-size: 14px; 
     }
 }
 
@@ -263,51 +262,6 @@ header {
     color: #007BFF;
 }
 
-/* Banner Principal */
-.main-banner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-height: 500px;
-}
-
-.banner-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-}
-
-.banner-slide.active {
-    opacity: 1;
-}
-
-.banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    max-width: 80%;
-}
-
-.banner-text h1 {
-    font-size: 40px;
-}
-
-.banner-text p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -326,69 +280,69 @@ header {
 
 /* Produtos e Promoções */
 .featured-products, .promotions {
-    padding: 40px 5%; /* Espaçamento ao redor da seção */
-    text-align: center; /* Centraliza o título horizontalmente */
-    max-width: 1200px; /* Limita a largura máxima da seção */
-    margin: 0 auto; /* Centraliza a seção na página */
+    padding: 40px 5%;
+    text-align: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .featured-products h2, .promotions h2 {
-    margin-bottom: 20px; /* Espaçamento entre o título e os produtos */
-    font-size: 24px; /* Tamanho do título */
-    font-weight: bold; /* Destaque no título */
-    color: #333; /* Cor do texto */
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
 }
 
 /* Grid de Produtos */
 .products-grid, .promotions-grid {
-    display: grid; /* Usa grid layout para organizar os produtos */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cria colunas flexíveis */
-    gap: 20px; /* Espaçamento entre os itens */
-    justify-items: center; /* Alinha os itens ao centro */
-    max-width: 100%; /* Garante que o grid não ultrapasse os limites */
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+    max-width: 100%; 
 }
 
 /* Estilo dos Cards */
 .product-item, .promotion-item {
-    border: 1px solid #ccc; /* Bordas leves para os itens */
-    border-radius: 8px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    width: 200px; /* Largura fixa dos itens para evitar desalinhamento */
-    text-align: center; /* Centraliza o conteúdo do card */
-    background-color: #fff; /* Fundo branco */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    width: 200px; 
+    text-align: center; 
+    background-color: #fff; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-item:hover, .promotion-item:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa no hover */
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
 /* Imagem do Produto */
 .product-item img, .promotion-item img {
-    width: 100%; /* Largura total do card */
-    height: auto; /* Proporções automáticas */
-    border-radius: 4px; /* Arredonda levemente as bordas da imagem */
-    margin-bottom: 10px; /* Espaçamento entre imagem e texto */
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+    margin-bottom: 10px; 
 }
 
 /* Botão de Comprar */
 .product-item .button, .promotion-item .button {
-    display: inline-block; /* Botão em bloco */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    margin-top: 10px; /* Espaçamento acima do botão */
-    background-color: #007bff; /* Fundo azul */
-    color: #fff; /* Texto branco */
-    border-radius: 4px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    font-size: 14px; /* Tamanho do texto */
-    font-weight: bold; /* Destaque no texto */
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    background-color: #007bff;
+    color: #fff; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-size: 14px; 
+    font-weight: bold; 
     transition: background-color 0.3s ease;
 }
 
 .product-item .button:hover, .promotion-item .button:hover {
-    background-color: #0056b3; /* Fundo azul escuro no hover */
+    background-color: #0056b3; 
 }
 
 /* Envio */
@@ -460,6 +414,7 @@ footer .social-icons {
 
 /* Estilo Geral */
 body {
+    background-image: url("images/fundo.png");
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -519,7 +474,7 @@ footer a:hover {
 }
 
 header {
-    background: url('banner.jpg') no-repeat center center/cover;
+    background: url('images/fundo\ header.png') no-repeat center center/cover;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -581,17 +536,17 @@ footer .social-icons img:hover {
 }
 footer {
     display: flex;
-    flex-direction: column; /* Posiciona os elementos em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    background-color: #333; /* Fundo escuro */
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; 
     color: white;
     padding: 1rem;
 }
 
 .social-media {
-    display: flex; /* Organiza as redes sociais em linha */
-    gap: 1rem; /* Espaço entre os ícones */
-    margin-bottom: 1rem; /* Espaço entre redes e o texto */
+    display: flex; 
+    gap: 1rem; 
+    margin-bottom: 1rem; 
 }
 
 .social-media img {
@@ -601,10 +556,10 @@ footer {
 }
 
 .social-media img:hover {
-    transform: scale(1.1); /* Efeito ao passar o mouse */
+    transform: scale(1.1); 
 }
 
 .footer-text {
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
     font-size: 0.9rem;
 }
