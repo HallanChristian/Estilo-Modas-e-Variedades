@@ -232,7 +232,7 @@ header {
 }
 
 .sub-navbar {
-    background-color: #E0A884;
+    background-color: transparent;
     border-top: 1px solid #ccc;
     padding: 10px 0;
     text-align: center;
@@ -284,7 +284,7 @@ header {
     padding: 40px 5%;
     text-align: center; 
     max-width: 1200px; 
-    background-color: transparent;
+    background-color: white;
     margin: 0 auto; 
 }
 
@@ -318,10 +318,11 @@ header {
 
 /* Estilo dos Cards */
 .product-card img {
-    /* width: 100%;
-    height: auto; */
+    width: 200px;
+    height: 200px;
     border-radius: 10px; /* Adiciona cantos arredondados */
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .product-item:hover, .promotion-item:hover {
@@ -431,6 +432,25 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+}
+
+.product-card {
+    flex: 1 1 30%; /* Ajuste a largura conforme necessário */
+    margin: 10px; /* Espaçamento entre os cards */
+    text-align: center;
+
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
 }
 
 nav ul {
